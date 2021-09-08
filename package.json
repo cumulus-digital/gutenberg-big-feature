@@ -1,0 +1,46 @@
+{
+  "name": "gutenberg-big-feature",
+  "version": "0.0.1",
+  "description": "Custom block for big feature",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "check-engines": "wp-scripts check-engines",
+    "check-licenses": "wp-scripts check-licenses",
+    "format:js": "wp-scripts format-js",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "lint:md:docs": "wp-scripts lint-md-docs",
+    "lint:md:js": "wp-scripts lint-md-js",
+    "lint:pkg-json": "wp-scripts lint-pkg-json",
+    "packages-update": "wp-scripts packages-update",
+    "start": "wp-scripts start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cumulus-digital/gutenberg-big-feature"
+  },
+  "keywords": [
+    "wordpress",
+    "cmls",
+    "gutenberg"
+  ],
+  "author": "vena",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/cumulus-digital/gutenberg-big-feature/issues"
+  },
+  "homepage": "https://github.com/cumulus-digital/gutenberg-big-feature/#readme",
+  "devDependencies": {
+    "@wordpress/scripts": "^18.0.0",
+    "bourbon": "^7.0.0",
+    "jquery": "^3.5.1",
+    "lodash": "^4.17.20"
+  },
+  "browserslist": [
+    "last 3 versions or > 1%"
+  ],
+  "dependencies": {
+    "js-cookie": "^2.2.1"
+  }
+}

@@ -1,0 +1,189 @@
+$width-max: 1200px;
+$width-large: 1030px;
+$width-medium: 820px;
+$width-small: 640px;
+
+@mixin frontend_only {
+
+	@at-root body:not(.wp-admin) & {
+		@content;
+	}
+
+}
+
+@mixin editor_styles() {
+
+	#start-resizable-editor-section {
+		display: none;
+	}
+
+	@content;
+
+	#end-resizable-editor-section {
+		display: none;
+	}
+
+}
+
+@mixin phone() {
+
+	@media (max-width: $width-small) {
+		@content;
+	}
+
+}
+
+@mixin tablet() {
+
+	@media (max-width: $width-medium) {
+		@content;
+	}
+
+}
+
+@mixin desktop() {
+
+	@media (min-width: $width-medium) {
+		@content;
+	}
+
+}
+
+@mixin hover() {
+
+	@media (hover: none) {
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+		&:active {
+			@content;
+		}
+	}
+
+	@media not all and (hover: none),
+	all and (-ms-high-contrast: none),
+	(-ms-high-contrast: active) {
+
+		&:hover,
+		&:focus {
+			@content;
+		}
+
+	}
+
+}
+
+.g-big-feature {
+	display: flex;
+	flex: 0 1 auto;
+	flex-basis: auto;
+	flex-direction: row;
+	position: relative;
+	max-width: 100%;
+
+	* {
+		box-sizing: border-box;
+	}
+
+	@include tablet {
+		display: block;
+		flex-direction: column;
+	}
+	@media (max-width: $width-medium) {
+		a {
+			margin: 0;
+			@include hover {
+				border: none;
+				box-shadow: none;
+			}
+		}
+	}
+
+	ul, li {
+		display: block;
+		list-style: none;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+	ul {
+		display: flex;
+		flex: 0 1 auto;
+		flex-basis: auto;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+	}
+	li {
+		width: 100%;
+	}
+	a {
+		border: 0 solid rgba(0,0,0,0);
+		box-shadow: 0 0 0 rgba(0,0,0,0);
+		display: block;
+		margin: 0;
+		position: relative;
+		z-index: 1;
+		transition: all 0.1s;
+
+		@include frontend_only {
+			@include hover {
+				z-index: 2;
+				transform: scale(1.03);
+				box-shadow:
+					0 0 0 1px rgba(0,0,0,0.3),
+					0 0 1em rgba(0,0,0,0.4);
+			}
+		}
+
+	}
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	.g-bf-cluster {
+		a {
+			@include frontend_only {
+				@include hover {
+					// So small features scale to the same as large
+					transform: scale(1.05);
+				}
+			}
+		}
+	}
+
+	.g-bf-container {
+		flex-direction: column;
+		flex-grow: 1;
+		//max-width: calc(100% / 3);
+		width: calc(100% / 3);
+
+		&:nth-child(even) {
+			flex-direction: column-reverse;
+		}
+
+		@include tablet {
+			width: 100%;
+			&, &:nth-child(even) {
+				flex-direction: row;
+			}
+			&:nth-child(even) {
+				flex-direction: row-reverse;
+			}
+			li {
+				flex-grow: 1;
+				width: 100%;
+			}
+			.g-bf-cluster {
+				width: 50%;
+				ul {
+					flex-direction: column;
+				}
+				li {
+					flex-grow: 0;
+					flex-shrink: 1;
+				}
+			}
+		}
+	}
+}

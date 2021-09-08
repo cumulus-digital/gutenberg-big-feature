@@ -1,0 +1,9 @@
+@import "./common.scss";
+.g-big-feature {
+	img.g-bf-placeholder {
+		margin: 1px;
+		background: #eee;
+		width: calc(100% - 2px);
+		height: calc(100% - 2px);
+	}
+}

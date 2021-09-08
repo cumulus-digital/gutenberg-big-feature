@@ -1,0 +1,199 @@
+/*!***********************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/scss/frontend.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************/
+.g-big-feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  max-width: 100%;
+}
+.g-big-feature * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+@media (max-width: 820px) {
+  .g-big-feature {
+    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 820px) {
+  .g-big-feature a {
+    margin: 0;
+  }
+}
+@media (max-width: 820px) and (hover: none) {
+  .g-big-feature a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  .g-big-feature a:active {
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+@media (max-width: 820px) {
+  @media not all and (hover: none), all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .g-big-feature a:hover, .g-big-feature a:focus {
+      border: none;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+    }
+  }
+}
+.g-big-feature ul, .g-big-feature li {
+  display: block;
+  list-style: none;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.g-big-feature ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+.g-big-feature li {
+  width: 100%;
+}
+.g-big-feature a {
+  border: 0 solid rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+          box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  display: block;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+}
+@media (hover: none) {
+  body:not(.wp-admin) .g-big-feature a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  body:not(.wp-admin) .g-big-feature a:active {
+    z-index: 2;
+    -webkit-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+            transform: scale(1.03);
+    -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 0 1em rgba(0, 0, 0, 0.4);
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 0 1em rgba(0, 0, 0, 0.4);
+  }
+}
+@media not all and (hover: none), all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  body:not(.wp-admin) .g-big-feature a:hover, body:not(.wp-admin) .g-big-feature a:focus {
+    z-index: 2;
+    -webkit-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+            transform: scale(1.03);
+    -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 0 1em rgba(0, 0, 0, 0.4);
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 0 1em rgba(0, 0, 0, 0.4);
+  }
+}
+
+.g-big-feature img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+@media (hover: none) {
+  body:not(.wp-admin) .g-big-feature .g-bf-cluster a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  body:not(.wp-admin) .g-big-feature .g-bf-cluster a:active {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+@media not all and (hover: none), all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  body:not(.wp-admin) .g-big-feature .g-bf-cluster a:hover, body:not(.wp-admin) .g-big-feature .g-bf-cluster a:focus {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+
+.g-big-feature .g-bf-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: calc(100% / 3);
+}
+.g-big-feature .g-bf-container:nth-child(even) {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+@media (max-width: 820px) {
+  .g-big-feature .g-bf-container {
+    width: 100%;
+  }
+  .g-big-feature .g-bf-container, .g-big-feature .g-bf-container:nth-child(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .g-big-feature .g-bf-container:nth-child(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .g-big-feature .g-bf-container li {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    width: 100%;
+  }
+  .g-big-feature .g-bf-container .g-bf-cluster {
+    width: 50%;
+  }
+  .g-big-feature .g-bf-container .g-bf-cluster ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .g-big-feature .g-bf-container .g-bf-cluster li {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+  }
+}
+
+/*# sourceMappingURL=frontend.css.map*/
