@@ -5,7 +5,7 @@ const { registerBlockType } = wp.blocks;
 const {
 	InnerBlocks,
 	useBlockProps,
-	__experimentalUseInnerBlocksProps: useInnerBlocksProps,
+	useInnerBlocksProps,
 } = wp.blockEditor;
 
 registerBlockType('cumulus-gutenberg/big-feature-column', {

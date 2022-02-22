@@ -8,7 +8,7 @@ namespace CUMULUS\Gutenberg\BigFeature;
  * GitHub Plugin URI: https://github.com/cumulus-digital/gutenberg-big-feature/
  * Primary Branch: main
  * Description: Gutenberg block for "Big Feature" media grid
- * Version: 0.0.1
+ * Version: 0.0.2
  * Author: vena
  * License: UNLICENSED
  */
